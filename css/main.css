@@ -8,6 +8,42 @@ rgb(250, 55, 5) or
 #5D6060 middark grey
 #30332E dark grey
 #6DDAAF highlight green
+
+font-family: 'Noto Serif', serif;
+font-weight: 400, 700, italic, regular, bold
 */
 
+body {
+  font-family: 'Noto Serif', serif;
+}
 
+h1 h3 h5 p{
+  font-weight: 400;
+}
+
+h2 h4 h6 {
+  font-weight: 700;
+}
+
+.navbar {
+  width: 100vw;
+  height: 50px;
+  position: sticky-top;
+  text-align: center;
+  background-color: #F8FFFF;
+  color: #350259;
+}
+
+.banner {
+  width: 100vw;
+  height: 70vh;
+  background-image: url('https://images.unsplash.com/photo-1496989981497-27d69cdad83e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1088&q=80');
+  background-position: center;
+  background-size: cover;
+  color: #F8FFFF;
+}
+
+.banner-text {
+  padding: 80px;
+  text-align: center;
+}
