@@ -14,7 +14,9 @@ font-weight: 400, 700, italic, regular, bold
 */
 
 body {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 h3 h5 p{
@@ -27,23 +29,54 @@ h2 h4 h6 {
 
 .navbar {
   width: 100vw;
-  height: 50px;
+  height: 6%;
   position: sticky-top;
   text-align: center;
-  background-color: #F8FFFF;
-  color: #350259;
+  text-shadow: 1px 2px 2px white;
+  background-color: #23013a;
+  color: rgb(103, 5, 5);
+}
+
+.container {
+  background-image: linear-gradient(#150222, #922ed5, rgb(103, 5, 5));
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 .banner {
-  width: 100vw;
-  height: 70vh;
-  background-image: url('https://images.unsplash.com/photo-1496989981497-27d69cdad83e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1088&q=80');
-  background-position: center;
-  background-size: cover;
+  width: 100%;
+  height: 24%;
   color: #F8FFFF;
 }
 
 .banner-text {
-  padding: 80px;
+  padding: 30px;
   text-align: center;
+}
+
+.the-peeps {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-flow: row nowrap;
+  overflow: scroll;
+  /* border-bottom: 20px solid white; */
+}
+
+.the-peeps img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 0 -40px 0 -40px;
+  border-bottom: 3px solid #F8FFFF;
+  transition: 0.5s;
+  transition-timing-function: ease;
+}
+
+.the-peeps img:hover {
+  /* z-index: 4; */
+  transform-origin: bottom;
+  transform: scale(1.3);
 }
